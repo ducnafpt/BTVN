@@ -15,7 +15,7 @@ int main(){
 					count++;
 				}
 			}
-			if(count <= 2){
+			if(count == 2){
 				printf("%d la so nguyen to \n", i);
 			}
 		}
