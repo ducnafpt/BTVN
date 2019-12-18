@@ -4,16 +4,16 @@ int main(){
 	printf("Nhap n: \n");
 	scanf("%d", &n);
 	int ary[n];
-	for(int i = 0; i <= n; i++)
+	for (int i = 0; i < n; i++)
 	{
 		printf("Nhap ary[%d]: \n", i);
 		scanf("%d", &ary[i]);
 	}
-	for(int i = 0; i <= n; i++)
+	for(int i = n - 1; i < n; i++)
 	{
-		if(ary[i] < 0){
-			ary[i] = 0;
-			printf("ary[%d] = %d \n", i, 0);
+		if(ary[i] % 2 != 0){
+			printf("So can tim la: %d \n", ary[i]);
 		}
 	}
+	return 0;
 }
